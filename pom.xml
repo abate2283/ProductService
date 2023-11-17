@@ -77,6 +77,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>gcp-product-service</finalName>
 	</build>
 
 </project>

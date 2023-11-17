@@ -5,6 +5,7 @@ import com.dailycodebuffer.ProductService.model.ProductResponse;
 import com.dailycodebuffer.ProductService.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +15,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @PostMapping
+//    @PostMapping
     public ResponseEntity<Long> addProduct(@RequestBody ProductRequest productRequest){
         long productId = productService.addProduct(productRequest);
 
@@ -29,7 +30,7 @@ public class ProductController {
 
     }
 
-//    @PostMapping
+    @PostMapping(path = "/save", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ProductRequest> saveProduct(@RequestBody ProductRequest productRequest){
         var product = productService.saveProduct(productRequest);
         return new ResponseEntity<>(product, HttpStatus.CREATED);

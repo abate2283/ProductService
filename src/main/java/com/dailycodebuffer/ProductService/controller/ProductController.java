@@ -1,6 +1,5 @@
 package com.dailycodebuffer.ProductService.controller;
 
-import com.dailycodebuffer.ProductService.entity.Product;
 import com.dailycodebuffer.ProductService.model.ProductRequest;
 import com.dailycodebuffer.ProductService.model.ProductResponse;
 import com.dailycodebuffer.ProductService.service.ProductService;

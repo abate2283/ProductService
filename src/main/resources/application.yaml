@@ -7,9 +7,8 @@ spring:
     username: root
     password: praise22
     driver-class-name: com.mysql.cj.jdbc.Driver
-
   jpa:
-    database-platform: org.hibernate.dialect.MySQL57InnoDBDialect
+    database-platform: org.hibernate.dialect.MySQL8Dialect
     hibernate:
       ddl-auto: update
   application:
@@ -20,6 +19,8 @@ spring:
 
 
 
+
+#
 #eureka:
 #  instance:
 #  client:

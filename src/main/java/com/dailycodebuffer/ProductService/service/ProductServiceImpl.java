@@ -6,7 +6,6 @@ import com.dailycodebuffer.ProductService.model.ProductRequest;
 import com.dailycodebuffer.ProductService.model.ProductResponse;
 import com.dailycodebuffer.ProductService.repository.ProductRepository;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
